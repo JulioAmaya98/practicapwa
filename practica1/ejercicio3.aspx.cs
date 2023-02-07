@@ -4,6 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Google.Apis.Calendar.v3;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Calendar.v3.Data;
+using Google.Apis.Services;
+using System.Text;
 
 namespace practica1
 {
@@ -13,22 +18,27 @@ namespace practica1
         {
 
         }
+        
+
 
         protected void CalculateButton_Click(object sender, EventArgs e)
         {
-            double primerNumero =Convert.ToDouble( txtNumber1.Text);
+            double primerNumero = Convert.ToDouble(txtNumber1.Text);
             double segundoNumero = Convert.ToDouble(txtNumber2.Text);
             double total = 0;
             if (rbSuma.Checked)
             {
                 total = primerNumero + segundoNumero;
-            }else if (rbResta.Checked)
+            }
+            else if (rbResta.Checked)
             {
-                total=primerNumero - segundoNumero; 
-            }else if (rbMultiplicacion.Checked)
+                total = primerNumero - segundoNumero;
+            }
+            else if (rbMultiplicacion.Checked)
             {
                 total = primerNumero * segundoNumero;
-            }else if (rbDivision.Checked)
+            }
+            else if (rbDivision.Checked)
             {
                 total = primerNumero / segundoNumero;
             }

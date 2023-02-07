@@ -24,6 +24,8 @@
         <div id="result">
             <asp:Label ID="resultLabel" runat="server"></asp:Label>
         </div>
+        <asp:GridView ID="CalendarGridView" runat="server">
+        </asp:GridView>
     </form>
 </body>
 </html>

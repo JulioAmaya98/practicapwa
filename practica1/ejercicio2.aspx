@@ -10,6 +10,12 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="Label1" runat="server" Text="Ingrese su nombre:"></asp:Label>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br />
+            <asp:Label ID="Label2" runat="server" Text="Ingrese su contraseña"></asp:Label>
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox><br />
+            <asp:Button ID="Button1" runat="server" Text="Ingresar" OnClick="Button1_Click" />
+            <div id="respuesta" runat="server"></div>
         </div>
     </form>
 </body>

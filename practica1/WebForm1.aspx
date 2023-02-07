@@ -11,10 +11,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="txtNombreProducto" runat="server"></asp:TextBox>
-            <asp:TextBox ID="txtCantidad" runat="server"></asp:TextBox>
-            <asp:TextBox ID="txtPrecio" runat="server"></asp:TextBox>
-            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+            <asp:Label ID="Label1" runat="server" Text="Nombre"></asp:Label><br />
+            <asp:TextBox ID="txtNombreProducto" runat="server"></asp:TextBox><br />
+            <asp:Label ID="Label2" runat="server" Text="Cantidad"></asp:Label><br />
+            <asp:TextBox ID="txtCantidad" runat="server"></asp:TextBox><br />
+            <asp:Label ID="Label3" runat="server" Text="Precio"></asp:Label><br />
+            <asp:TextBox ID="txtPrecio" runat="server"></asp:TextBox><br />
+            <asp:Button ID="Button1" runat="server" Text="Registrar" OnClick="Button1_Click" /><br />
             <div runat="server" id="respuesta"></div>
 
         </div>
